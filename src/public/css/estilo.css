@@ -1,0 +1,102 @@
+/*************************************** CSS formulario_imagem ***************************************/ 
+
+/* Body */
+.body {
+  background-image: linear-gradient(to right, #ffecec, #ffffff);  
+}
+
+/* Navbar */
+.bg-darkred {
+  background-image: linear-gradient(45deg, #600000, #b00000);
+  color: white;
+  font-family: 'Genova';
+  padding: 0;
+}
+
+i.fa-camera-retro {
+  font-size: 30px;
+}
+
+img.icon {
+  margin-top: auto;
+  margin-bottom: auto;
+  max-height: 20px;
+  max-width: 20px;
+}
+
+span.font-title {
+  font-family: 'French Script MT';
+  font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  div.ml {
+    margin-left: 10px;
+  }
+}
+
+/* Link Voltar */
+.voltar {
+  max-width: auto;
+  max-height: 20px;
+  font-style: border;
+  font-family: Arial;
+}
+
+a.voltar {
+  font-size: 15px;
+  color: #530303;
+}
+
+/* Form Header */
+.card-header {
+  color: white;
+  background-image: linear-gradient(to top, #530303, #dd0000);
+  font-size: 30px;
+  font-family: 'Geneva';  
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.img {
+  margin-top: auto;
+  margin-bottom: auto;
+  max-height: 30px;
+  max-width: 30px;
+}
+
+/* Form Col_1 */
+.img-camera {
+  margin: auto;
+  max-height: 250px;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+/* Form Col_2 */
+button.botton {
+  width: 100px;
+}
+
+button.clean {
+  background-color: #900000;
+  color: #ffffff;
+}
+
+button.clean:hover {
+  background-color: #600000;
+  color: #ffecec;
+}
+
+button.save {
+  background-color: #dd0000;
+  color: #ffffff;
+}
+
+button.save:hover {
+  background-color: #aa0000;
+  color: #ffecec;
+}
+

@@ -7,11 +7,88 @@
   <!-- Bootstrap css -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/23708beaa0.js" crossorigin="anonymous"></script>
+
+  <!-- Meu CSS -->
+  <link rel="stylesheet" href="css/estilo.css">
+
   <title>Cadastrar imagem</title>
 </head>
-<body>
+<body class="body">
   
-  <h1 class="text-primary">Olá Mundo</h1>
+  <!-- Navbar -->
+  <%- include('partials/Navbar') %>
+
+  <!-- Link Voltar -->
+  <div class="container mt-3">
+    <div class="row">
+      <img class="voltar" src="img/iconVoltar.png" alt="icone voltar">
+      <a class="voltar" href="">Voltar</a>
+    </div>
+    
+    <!-- Form -->
+    <div class="card border mb-3 shadow-lg p-3 mb-5 bg-white rounded">
+      
+      <!-- Form Header -->
+      <div class="card-header">
+        <img class="img" src="./img/image.png" alt="imagem">
+        <h7>Nova imagem</h7> 
+      </div>
+      <div class="row">
+        
+        <!-- Form Col_1 -->
+        <div class="card-body text-dark col-lg-6 col-md-6 col-sm-12">
+          <img class="col-12 img-camera mt-2" src="./img/camera.png" alt="camera">
+          <div class="input-group mt-4">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input col-12" id="inputGroupFile02">
+              <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Selecione o arquivo</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Col_2 -->
+        <div class="card-body text-dark col-lg-6 col-md-6 col-sm-12">
+          <fieldset class="col-12 mt-3">
+            <h6>Título</h6> 
+            <div class="input-group mb-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  <img class="icon" src="./img/imagens.png" alt="imagens">
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Digite o título da sua imagem" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </fieldset>
+                    
+          <fieldset class="col-12">
+            <h6>Data</h6> 
+            <div class="input-group mb-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  <img class="icon" src="./img/date.png" alt="calendário">
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="dd/mm/aaaa" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </fieldset>
+
+          <fieldset class="col-12">
+            <h6>Descrição</h6>
+            <div class="input-group mb-2">
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+          </fieldset>
+
+          <div class="col-12">
+            <button type="button" class="btn botton clean">Limpar</button>
+            <button type="button" class="btn botton save">Salvar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- jQuery, popper e Bootstrap -->
   <script src="./js/jquery-3.5.1.slim.min.js"></script>
